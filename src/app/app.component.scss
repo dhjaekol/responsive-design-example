@@ -197,6 +197,7 @@ main {
 @media (min-width: $min-width-break) {
   .nav-menu {
     display: flex;
+    position: static;
     border: 0;
     padding: 0 1em;
   }
