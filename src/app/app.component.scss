@@ -1,3 +1,5 @@
+$min-break: 35em;
+
 :root {
   box-sizing: border-box;
   // Base font size scales slightly with the viewport.
@@ -20,25 +22,37 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/*
+ * Links
+ */
+
 a:link {
   color: #1476b8;
   font-weight: bold;
   text-decoration: none;
 }
+
 a:visited {
   color: #1430b8;
 }
+
 a:hover {
   text-decoration: none;
 }
-// handled by routerLinkActive?
-// a:active {
-//   color: #1430b8;
-// }
+
+/*
+ * Header Section
+ */
 
 .page-header {
   padding: 0.4em 1em;
   background-color: #fff;
+}
+
+@media (min-width: $min-break) {
+  .page-header {
+    padding: 1em;
+  }
 }
 
 .title > h1 {
@@ -48,11 +62,21 @@ a:hover {
   margin: 0.2em 0;
 }
 
+@media (min-width: $min-break) {
+  .title > h1 {
+    font-size: 2.25rem;
+  }
+}
+
 .slogan {
   color: #888;
   font-size: 0.875em;
   margin: 0;
 }
+
+/*
+ * Hero image
+ */
 
 .hero {
   padding: 2em 1em;
@@ -63,8 +87,25 @@ a:hover {
   text-shadow: 0.1em 0.1em 0.3em #000;
 }
 
+@media (min-width: $min-break) {
+  .hero {
+    padding: 5em 3em;
+    font-size: 1.2rem;
+  }
+}
+
+/*
+ * Main section
+ */
+
 main {
   padding: 1em;
+}
+
+@media (min-width: $min-break) {
+  main {
+    padding: 2em 1em;
+  }
 }
 
 .subtitle {
@@ -85,10 +126,8 @@ main {
   top: -1.2em;
   right: 0em;
   padding-left: 0.1em;
-
   border: 0;
   background-color: transparent;
-
   font-size: 3em;
   width: 1em;
   height: 1em;
@@ -97,6 +136,7 @@ main {
   white-space: nowrap;
   overflow: hidden;
 }
+
 .menu-toggle:after {
   position: absolute;
   top: 0.2em;
@@ -114,9 +154,25 @@ main {
   margin: 0;
 }
 
+
+@media (min-width: $min-break) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-dropdown {
+    display: block;
+    position: static;
+  }
+}
+
 .menu.is-open .menu-dropdown {
   display: block;
 }
+
+/*
+ * Nav Menu
+ */
 
 .nav-menu {
   margin: 0;
@@ -136,5 +192,26 @@ main {
   padding: 0.8em 1em;
   color: #fff;
   font-weight: normal;
+}
+
+@media (min-width: $min-break) {
+  .nav-menu {
+    display: flex;
+    border: 0;
+    padding: 0 1em;
+  }
+
+  .nav-menu > li {
+    flex: 1;
+  }
+
+  .nav-menu > li + li {
+    border: 0;
+  }
+
+  .nav-menu > li > a {
+    padding: 0.3em;
+    text-align: center;
+  }
 }
 
