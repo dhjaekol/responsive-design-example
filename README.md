@@ -1,4 +1,5 @@
 # WombatCoffee
+This is an example of a mobile-first reponsive design Angular application.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
 

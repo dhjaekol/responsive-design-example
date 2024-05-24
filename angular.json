@@ -28,7 +28,7 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "wombat-coffee/public"
               }
             ],
             "styles": [
