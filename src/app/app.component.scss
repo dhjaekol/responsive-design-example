@@ -113,6 +113,20 @@ main {
   margin: 0;
 }
 
-.menu-is-open .menu-dropdown {
+.menu.is-open .menu-dropdown {
   display: block;
 }
+
+// .nav-menu {
+//   margin: 0;
+//   padding-left: 0;
+//   border: 1px solid #ccc;
+//   list-style: none;
+//   background-color: #000;
+//   color: #fff;
+// }
+
+// .nav-menu > li > a {
+//   border-top: 1px solid #ccc;
+// }
+
