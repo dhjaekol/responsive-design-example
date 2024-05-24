@@ -83,7 +83,8 @@ main {
 .menu-toggle {
   position: absolute;
   top: -1.2em;
-  right: 0.1em;
+  right: 0em;
+  padding-left: 0.1em;
 
   border: 0;
   background-color: transparent;
@@ -117,16 +118,23 @@ main {
   display: block;
 }
 
-// .nav-menu {
-//   margin: 0;
-//   padding-left: 0;
-//   border: 1px solid #ccc;
-//   list-style: none;
-//   background-color: #000;
-//   color: #fff;
-// }
+.nav-menu {
+  margin: 0;
+  padding-left: 0;
+  border: 1px solid #ccc;
+  list-style: none;
+  background-color: #000;
+  color: #fff;
+}
 
-// .nav-menu > li > a {
-//   border-top: 1px solid #ccc;
-// }
+.nav-menu > li + li {
+  border-top: 1px solid #ccc;
+}
+
+.nav-menu > li > a {
+  display: block;
+  padding: 0.8em 1em;
+  color: #fff;
+  font-weight: normal;
+}
 

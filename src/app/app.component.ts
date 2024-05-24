@@ -16,7 +16,6 @@ export class AppComponent {
   toggleMenu(e: Event) {
     e.preventDefault();
     let menu = document.getElementById('main-menu');
-    console.log("menu: ", menu);
     menu?.classList.toggle('is-open');
   }
 }
